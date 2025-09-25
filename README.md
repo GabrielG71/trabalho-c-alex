@@ -48,8 +48,8 @@ Desenvolvido pelos estudantes da **FATEC Ourinhos - SP**, este repositório cont
 
 1. **Clone este repositório:**
    ```bash
-   git clone https://github.com/seu-usuario/projetos-c-fatec-ourinhos.git
-   cd projetos-c-fatec-ourinhos
+   git clone https://github.com/GabrielG71/trabalho-c-alex
+   cd trabalho-c-alex
    ```
 
 2. **Navegue até o projeto desejado:**
@@ -76,7 +76,7 @@ Desenvolvido pelos estudantes da **FATEC Ourinhos - SP**, este repositório cont
 ## 📂 Estrutura do Projeto
 
 ```
-projetos-c-fatec-ourinhos/
+trabalho-c-alex/
 ├── projeto1-media-alunos/
 │   ├── main.c
 │   ├── README.md
