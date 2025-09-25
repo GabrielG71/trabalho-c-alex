@@ -38,13 +38,13 @@ O **Tigrinho** é um simulador de caça-níquel que traz toda a emoção dos cas
 1. **Compile o programa:**
 
    ```bash
-   gcc main.c -o tigrinho
+   gcc main.c -o main
    ```
 
 2. **Execute o jogo:**
 
    ```bash
-   ./tigrinho
+   ./main
    ```
 
 3. **Instruções do jogo:**
@@ -123,7 +123,7 @@ Parabéns! Você terminou com lucro de 40 créditos, sortudo da porra!
 ## 📂 Estrutura do Projeto
 
 ```
-tigrinho-slot-machine/
+projeto2-tigrinho-slot/
 ├── main.c          # Código-fonte completo
 └── README.md       # Esta documentação
 ```
