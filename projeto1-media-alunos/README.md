@@ -62,13 +62,13 @@ Um bônus de **+0.5 ponto** é aplicado à média se o aluno atender a **ambos**
 1.  **Compile o programa:**
 
     ```bash
-    gcc main.c -o calculadora
+    gcc main.c -o main
     ```
 
 2.  **Execute o programa:**
 
     ```bash
-    ./calculadora
+    ./main
     ```
 
 3.  **Instruções:**
@@ -143,7 +143,7 @@ Situacao: Recuperacao
 ## 📂 Estrutura do Projeto
 
 ```
-calculadora-academica/
+projeto1-media-alunos/
 ├── main.c      # Código-fonte completo do programa
 └── README.md   # Esta documentação
 ```
