@@ -33,7 +33,7 @@ Desenvolvido pelos estudantes da **FATEC Ourinhos - SP**, este repositório cont
 <p align="left">
   <img alt="C" src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white"/>
   <img alt="GCC" src="https://img.shields.io/badge/GCC-000000?style=for-the-badge&logo=gnu&logoColor=white"/>
-  <img alt="Visual Studio Code" src="https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white"/>
+  <img alt="CLion" src="https://img.shields.io/badge/CLion-000000?style=for-the-badge&logo=clion&logoColor=white"/>
 </p>
 
 ---
@@ -121,16 +121,6 @@ projetos-c-fatec-ourinhos/
 *Faculdade de Tecnologia de Ourinhos*  
 Curso: **Análise e Desenvolvimento de Sistemas**  
 Período: **2º Semestre**
-
----
-
-## 📋 Características dos Projetos
-
-- **Linguagem:** C Puro
-- **Paradigma:** Programação estruturada
-- **Foco:** Lógica de programação e estruturas de dados básicas
-- **Interface:** Terminal/Linha de comando
-- **Compilação:** GCC compatível
 
 ---
 
