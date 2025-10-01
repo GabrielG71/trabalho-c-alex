@@ -70,62 +70,11 @@ void exibirResultado(int roleta[], int premio, int aposta) {
     }
 }
 
-void adicionarHistorico(int historico[][4], int* totalJogadas, int roleta[], int premio) {
-    if (*totalJogadas < 10) {
-        historico[*totalJogadas][0] = roleta[0];
-        historico[*totalJogadas][1] = roleta[1];
-        historico[*totalJogadas][2] = roleta[2];
-        historico[*totalJogadas][3] = premio;
-        (*totalJogadas)++;
-    } else {
-        for (int i = 0; i < 9; i++) {
-            for (int j = 0; j < 4; j++) {
-                historico[i][j] = historico[i + 1][j];
-            }
-        }
-        historico[9][0] = roleta[0];
-        historico[9][1] = roleta[1];
-        historico[9][2] = roleta[2];
-        historico[9][3] = premio;
-    }
-}
-
-void exibirHistorico(int historico[][4], int totalJogadas) {
-    if (totalJogadas == 0) {
-        printf("\nNenhuma jogada foi realizada.\n");
-        return;
-    }
-
-    printf("\n📊 HISTÓRICO DAS ÚLTIMAS %d JOGADAS:\n", totalJogadas > 10 ? 10 : totalJogadas);
-    printf("----------------------------------------------\n");
-
-    int inicio = totalJogadas > 10 ? 0 : 0;
-    int fim = totalJogadas > 10 ? 10 : totalJogadas;
-
-    for (int i = inicio; i < fim; i++) {
-        char simbolo1[20], simbolo2[20], simbolo3[20];
-        obterSimbolo(historico[i][0], simbolo1);
-        obterSimbolo(historico[i][1], simbolo2);
-        obterSimbolo(historico[i][2], simbolo3);
-
-        printf("Jogada %d: [%s][%s][%s] → ", i + 1, simbolo1, simbolo2, simbolo3);
-        if (historico[i][3] > 0) {
-            printf("Ganhou safado(a) %d créditos\n", historico[i][3]);
-        } else {
-            printf("Perdeu a aposta kkkkkkkkkkkkkkkkk\n");
-        }
-    }
-    printf("----------------------------------------------\n");
-}
-
 int main() {
     int saldo = 100;
     int aposta;
     int roleta[3];
     int premio;
-
-    int historico[10][4];
-    int totalJogadas = 0;
 
     srand(time(NULL));
 
@@ -156,8 +105,6 @@ int main() {
 
         exibirResultado(roleta, premio, aposta);
 
-        adicionarHistorico(historico, &totalJogadas, roleta, premio);
-
         printf("Saldo atual: %d créditos\n", saldo);
 
         if (saldo == 0) {
@@ -165,8 +112,6 @@ int main() {
             break;
         }
     }
-
-    exibirHistorico(historico, totalJogadas);
 
     printf("\nSaldo final: %d créditos\n", saldo);
     if (saldo > 100) {
