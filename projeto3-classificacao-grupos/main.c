@@ -6,7 +6,6 @@
 
 //declaração da função para numero aleatorio
 double numberDouble ();
-int numberInt ();
 
 // Definição do struct para o array da população
 typedef struct  {
@@ -163,3 +162,4 @@ int main(void) {
 double numberDouble () {
     return ((double)rand() / RAND_MAX) * INTERVALO_MAX;
 }
+
